@@ -11,6 +11,11 @@ import _ from 'lodash'
  * @return {Object}       Match query.
  */
 export default function matchQuery(field, term, opts = {}) {
+  if (!term){
+    return {
+      match_all: {}
+    }
+  }
   if (_.isEmpty(opts)) {
     return {
       match: {

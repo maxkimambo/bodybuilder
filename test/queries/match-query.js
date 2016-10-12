@@ -22,6 +22,13 @@ describe('matchQuery', () => {
         }
       }
     })
+  });
+
+  it('should create match_all query', ()=> {
+    let result = matchQuery('user', '');
+    expect(result).to.eql({
+      match_all: {}
+    })
   })
 
 })
