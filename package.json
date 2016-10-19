@@ -1,6 +1,6 @@
 {
   "name": "bodybuilder",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "description": "An elasticsearch query body builder.",
   "main": "lib/index.js",
   "files": [
@@ -15,6 +15,7 @@
     "build:docs": "documentation build src/index.js -o docs -f html --name Bodybuilder",
     "build": "npm run build:babel && npm run build:umd && npm run build:docs",
     "lint": "eslint src test",
+    "style": "npm run lint",
     "test": "mocha --require babel-core/register --recursive test",
     "watch:test": "mocha --watch --require babel-core/register --recursive test",
     "check": "npm run lint && npm test",

@@ -23,7 +23,7 @@ export default function matchQuery(field, term, opts = {}) {
       }
     }
   } else {
-    opts.query = term;
+    opts.query = term
 
     return {
       match: {
